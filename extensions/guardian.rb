@@ -27,7 +27,7 @@ module DiscourseJournal
     end
 
     def user_in_author_groups(topic)
-      topic&.category&.journal_author_groups.include?('everyone') ||
+      topic&.category&.journal_author_groups&.include?('everyone') ||
       ((topic&.category&.journal_author_groups & @user.groups.map(&:name)).size > 0)
     end
   end

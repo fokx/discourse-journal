@@ -111,7 +111,7 @@ module DiscourseJournal
           replies += replies_to_reply if replies_to_reply.any?
         end
 
-        return replies
+        replies
       end
     end
   end

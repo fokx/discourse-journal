@@ -40,7 +40,7 @@ export default {
       } else if (type === "create_journal") {
         icon = "plus";
       } else if (["edit_entry", "edit_comment"].includes(type)) {
-        icon = "pencil-alt";
+        icon = "pencil";
       }
 
       return {

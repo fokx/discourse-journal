@@ -80,36 +80,6 @@ export default {
         },
       });
 
-      //TODO Consider re-implementing in future
-      // api.reopenWidget("timeline-scrollarea", {
-      //   html(attrs, state) {
-      //     const result = this._super(attrs, state);
-
-      //     if (siteSettings.journal_entries_timeline && attrs.topic.journal) {
-      //       const position = this.position();
-
-      //       result.push(
-      //         this.attach("timeline-entries",
-      //           deepMerge(position, attrs)
-      //         )
-      //       );
-      //     }
-
-      //     return result;
-      //   }
-      // });
-
-      //TODO Consider re-implementing in future
-      // api.reopenWidget("timeline-last-read", {
-      //   html(attrs) {
-      //     if (attrs.journal) {
-      //       return '';
-      //     } else {
-      //       return this._super(...arguments);
-      //     }
-      //   }
-      // })
-
       api.modifyClass("component:topic-progress", {
         pluginId: PLUGIN_ID,
 
